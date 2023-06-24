@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">TEMP CONVERTOR</string>
-    <string name="fc">F-C</string>
-    <string name="cf">C-F</string>
-    <string name="ck">C-K</string>
-    <string name="kc">K-C</string>
-    <string name="fk">F-K</string>
-    <string name="kf">K-F</string>
-</resources>
