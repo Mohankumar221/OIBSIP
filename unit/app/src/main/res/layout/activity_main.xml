@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <EditText
+    android:id="@+id/ip"
+    android:layout_height="48dp"
+    android:layout_width="match_parent"
+    android:inputType="text"
+    android:layout_marginTop="100dp"
+    android:layout_marginHorizontal="50dp"
+    android:hint="Enter The Temprature:" />
+
+
+    <TextView
+        android:id="@+id/op"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="200dp"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:id="@+id/bfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fc"
+        android:textSize="30sp"
+        android:onClick="f2c"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp"/>
+    <Button
+        android:id="@+id/bcf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cf"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="225dp"
+        android:textSize="30sp"
+        android:onClick="c2f" />
+    <Button
+        android:id="@+id/bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ck"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/bfc"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:onClick="c2k"/>
+    <Button
+        android:id="@+id/bkc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kc"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/bfc"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:onClick="k2c"/>
+
+    <Button
+        android:id="@+id/bfk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fk"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/bck"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:onClick="f2k"/>
+    <Button
+        android:id="@+id/bkf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kf"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/bkc"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:onClick="k2f"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type Of Conversion"
+        android:layout_below="@id/op"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tempreature:"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="F-Farenhiet,C-Celcius,K-Kelvin"
+        android:layout_alignParentBottom="true"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
